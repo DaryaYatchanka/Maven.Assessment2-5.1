@@ -5,16 +5,25 @@ package rocks.zipcode.assessment2.objectorientation;
  */
 public class Address {
     public Address() {
+        String addressLine1;
+        String addressLine2;
+        String city;
+        String state;
+        String zipcode;
+
+
     }
 
     /**
      * @param addressLine1 - first address line
      * @param addressLine2 - second address line
-     * @param city - city of location
-     * @param state - state of city
-     * @param zipcode - zipcode of region
+     * @param city         - city of location
+     * @param state        - state of city
+     * @param zipcode      - zipcode of region
      */
     public Address(String addressLine1, String addressLine2, String city, String state, String zipcode) {
+
+
     }
 
     public String getAddressLine1() {
@@ -54,6 +63,6 @@ public class Address {
 
     @Override
     public boolean equals(Object o) {
-        return (Boolean)null;
+        return (Boolean) null;
     }
 }

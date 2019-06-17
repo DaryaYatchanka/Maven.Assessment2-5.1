@@ -1,5 +1,8 @@
 package rocks.zipcode.assessment2.arrays;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 /**
  * @author leon on 28/11/2018.
  */
@@ -11,7 +14,8 @@ public class StringArrayUtils {
      * @return an array with all elements between `startingIndex` and `endingIndex`
      */
     public static String[] getSubArray(String[] arrayToBeSpliced, int startingIndex, int endingIndex) {
-        return null;
+        String[] sliced = Arrays.copyOfRange(arrayToBeSpliced, startingIndex,endingIndex);
+        return sliced;
     }
 
 
@@ -21,6 +25,7 @@ public class StringArrayUtils {
      * @return an array all elements between after `startingIndex`
      */
     public static String[] getEndingArray(String[] arrayToBeSpliced, int startingIndex) {
-        return null;
+
+        return getSubArray(arrayToBeSpliced,startingIndex, arrayToBeSpliced.length);
     }
 }
