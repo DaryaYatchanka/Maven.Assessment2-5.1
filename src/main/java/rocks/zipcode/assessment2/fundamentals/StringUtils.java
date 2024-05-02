@@ -43,7 +43,8 @@ public class StringUtils {
      */
     public static Boolean isAlphaString(String string) {
 
-        return string.matches("[a-zA-Z ]");
+
+        return string.matches("[A-Za-z\\s]+");
     }
 
     /**
